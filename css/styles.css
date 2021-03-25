@@ -1,0 +1,302 @@
+:root {
+
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #FFC107;
+    --secundario: #0097a7;
+    --gris: #757575;
+
+
+}
+html{
+
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px;
+    font-family:'Krub', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+.contenedor {
+    max-width: 120 rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.nav-bg{
+
+    background-color: var(--secundario);
+}
+.navegacion-principal {
+   
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    
+}
+
+@media (min-width:768px){
+.navegacion-principal{
+flex-direction:row;
+}
+}
+@media (min-width:768px){
+    .navegacion-principal a{
+        color: var(--blanco);
+
+    }
+}
+
+
+.navegacion-principal a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+.navegacion-principal a:hover {
+    background-color: var(--primario);
+}
+@media(min-width:768){
+
+body {
+    background-color: blue;
+}
+}
+
+.titulo {
+    text-align: center;
+    font-size: 3.8rem;  
+ 
+}
+.banner{
+    height: 700px;
+    position: relative;
+    background: #afbccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner__img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.2;
+}
+
+.banner__info{
+    padding:0 3em;
+    position: absolute;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    color: rgb(29, 10, 110);
+    margin: auto;
+}
+.banner__title{
+    line-height: 1.5;
+    font-size: 2.5em;
+}
+
+.banner__p{
+    line-height: 2;
+    font-size: 0.9em;
+    opacity: 0.9;
+    margin-top: 1em;
+}
+
+.boton1{
+    height: 38px;
+    background: #e8441d;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: floralwhite;
+}
+
+header a{
+    color: floralwhite;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+
+header a:hover{
+  color: #757575;
+  font-weight: bold;
+}
+
+#boletin{
+    padding: 15px;
+    color: #fff;
+    background:#24282b;
+}
+
+#boletin h1{
+    float: left;
+}
+
+#boletin form{
+    float: right;
+    margin-top: 15px;
+}
+
+#boletin input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+#cajas{
+    margin-top: 20px;
+}
+
+#cajas .caja{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 2px;
+}
+#cajas .caja img{
+    width: 180px;
+}
+
+.contenedor1{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+aside#lateral{
+    float: right;
+    width: 30%;
+    margin-top: 50px;
+}
+
+.oscuro{
+    padding: 15px;
+    background-color: #35424a;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+article#main-col{
+    float: left;
+    width: 68%;
+
+}
+
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #1293d4;
+    text-align: center;
+
+}
+
+.galeria{
+    width: 90%;
+    margin: auto;
+    list-style: none;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: safe;
+
+}
+
+.galeria li{
+    margin: 5px;
+}
+
+.galeria img{
+    width: 150px;
+    height: 180px;
+}
+
+.modal{
+    display: none;
+}
+
+
+.modal:target{
+    display: block;
+    position: fixed;
+    background-color: black;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+}
+
+.modal h3{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.imagen{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen a{
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.imagen a:nth-child(2){
+    margin: 0;
+    height: 100%;
+    flex-shrink: 2;
+}
+
+.imagen img{
+    width: 500px;
+    height: 100%;
+    border: 7px solid #fff;
+    box-sizing: border-box;
+}
+
+.cerrar{
+    display: block;
+    background: #fff;
+    width: 25px;
+    height: 25px;
+    margin: 15px auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    padding: 5px;
+    border-radius: 50%;
+    line-height: 25px;
+}
+
+input, textarea{
+    width: 100%;
+    height: 35px;
+    border: 1px solid gray;
+    margin-bottom: 5px;
+}
+
+textarea{
+    height: 120px;
+}
+
+input[type="submit"]{
+    background: #e8441d;
+    color: #fff;
+}

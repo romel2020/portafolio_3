@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+<body background="Assets/Felices_Vacaciones.jpg">
+    <header>
+    
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="#nosotros">Quienes Somos</a>
+            <a href="#turistico">Paquetes Turisticos</a>
+            <a href="#contacto">Contáctanos</a>
+            
+        </nav>
+    </div>
+
+    </header>
+    
+      <section>
+      
+    
+        <section class="banner">
+          <img class="banner__img" src="Assets/images/banner.jpeg">
+          <div class="banner__info">
+              <h1 class="banner__title">Seamos parte de una aventura</h1>
+              <p class="banner__p">Bienvenido a Tierra Indómita, aqui encontraras viajes extraordinarios los               cuales se encargaran de crearte una experiencia involvidable!</p>
+          </div>
+      </section>
+      <section id="boletin">
+       <div class="contenedor">
+         <h1>Suscribete a nuestro boletín</h1>
+         <form>
+           <input type ="email" name="email" placeholder="Ingrese su mail aqui....">
+            <button type="submit" class="boton1"> Suscribete</button>
+         </form>
+       </div>
+      </section>
+
+      <section id="cajas">
+        <div class="contenedor1">
+       
+        <div class="caja">
+          <img src="Assets/images/mision.png">
+          <p>Viajar hace bien para la salud y fortalece el espíritu.</p>
+        </div>
+        <div class="caja">
+          <img src="Assets/images/vision.png">
+          <p>Viajar hace bien para la salud y fortalece el espíritu.</p>
+        </div>
+        <div class="caja">
+          <img src="Assets/images/creencias1.jpg">
+          <p>Viajar hace bien para la salud y fortalece el espíritu.</p>
+        </div>
+       </div>
+      </section>
+      <section id="nosotros">
+          <div class="contenedor1">
+            <article id="main-col">
+             <h1> Nosotros</h1>
+                 <p>Viajar hace bien para la salud y fortalece el espíritu. 
+                    Es por eso que En Terra Incognita ofrecemos un servicio de primera clase, 
+                    siempre en favor de la experiencia y el bienestar de quienes desean hacer
+                    de sus vacaciones un período de ensueño en medio del descanso.</p>
+                 <p class="oscuro"> Nuestro servicio abarca los más atractivos puntos turísticos del país,
+                    destacando la Zona Central costera y el territorio austral. Como proyección,
+                    en un lapso de 5 años abarcaremos nuestro servicio a nivel continental y es 
+                    por esta razón que Terra Incognita, más que brindar un servicio, se orienta a 
+                    la aventura y la exploración de recovecos fascinantes e ignotos.</p> 
+
+                    <img src="Assets/images/campo.png" width="740"> 
+              
+            </article>
+                  <aside id="lateral">
+                    <div class="oscuro">
+                      <h3>Que hacemos</h3>
+                      <p>Hacer turismo es darle valor y transmitir lo que cada sitio posee para ofrecer al mundo. ... 
+                        Es generar un sentido de pertenencia y conocer los atributos del destino, aquellos que se manifiestan
+                        para darle potencial turístico. </p>
+                    </div>
+                  </aside>
+          </div>
+      </section>
+      <section id="turistico">
+        <div class="contenedor1">
+          <article>
+           <h1> Paquete Turistico</h1>
+             <ul class="galeria">
+               <li><a href="#img1"><img src="assets/images/beach-2179183_640.jpg" alt=""></a></li>
+               <li><a href="#img2"><img src="assets/images/polynesia-3021072_640.jpg" alt=""></a></li>
+               <li><a href="#img3"><img src="assets/images/train-1728537_640.jpg" alt=""></a></li>
+               <li><a href="#img4"><img src="assets/images/cafe-3537801_640.jpg" alt=""></a></li>
+             </ul>
+
+             <div class="modal" id="img1">
+               <h3>Paquete 1</h3>
+                <div class="imagen">
+                  <a href="#img4">&#60;</a>
+                  <a href="#img2"><img src="assets/images/beach-2179183_640.jpg" alt="">
+                  <a href="#img2">></a>  
+                </div>
+                 <a class="cerrar" href="">X</a>
+             </div>
+             <div class="modal" id="img2">
+              <h3>Paquete 2</h3>
+               <div class="imagen">
+                 <a href="#img1">&#60;</a>
+                 <a href="#img3"><img src="assets/images/polynesia-3021072_640.jpg" alt="">
+                 <a href="#img3">></a>  
+               </div>
+                <a class="cerrar" href="">X</a>
+            </div>
+            <div class="modal" id="img3">
+              <h3>Paquete 3</h3>
+               <div class="imagen">
+                 <a href="#img2">&#60;</a>
+                 <a href="#img4"><img src="assets/images/train-1728537_640.jpg" alt="">
+                 <a href="#img4">></a>  
+               </div>
+                <a class="cerrar" href="">X</a>
+            </div>
+            <div class="modal" id="img4">
+              <h3>Paquete 4</h3>
+               <div class="imagen">
+                 <a href="#img3">&#60;</a>
+                 <a href="#img1"><img src="assets/images/cafe-3537801_640.jpg" alt="">
+                 <a href="#img1">></a>  
+               </div>
+                <a class="cerrar" href="">X</a>
+            </div>
+            
+          </article>
+             
+        </div>
+    </section>
+
+    <section id="contacto">
+      <div class="contenedor1">
+        <article id="main-col">
+         <h1>Contactanos</h1>
+          <form>
+            <label>Nombre</label>
+            <input type="text" name="nombre" placeholder="Ingresa tu nombre">
+            <br>
+            <label>Mail</label>
+            <input type="text" name="email" placeholder="Ingresa tu email">
+            <br>
+            <label>Telefono</label>
+            <input type="text" name="fono" placeholder="Ingresa tu Telefono">
+            <br>
+            <label>Celular</label>
+            <input type="text" name="Celular" placeholder="Ingresa tu Celular">
+            <br>
+            <label>Mensaje</label>
+            <textarea></textarea>
+            <br>
+            <input type="submit" value="Enviar">
+          </form>
+            
+      </div>
+  </section>
+     
+     
+        
+                
+
+          <footer>
+             <p> Terra_Incognita Desarrollo web, copyright &copy;2021</p>
+          </footer>
+        </body>
+        </html>
+        
